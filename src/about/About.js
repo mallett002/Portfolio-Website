@@ -4,7 +4,6 @@ import Logo from '../headings/Logo';
 import Heading from '../headings/Heading';
 import Nav from '../navs/Nav';
 import Hamburger from '../navs/Hamburger';
-import ajax from '../images/ajax.png';
 import html from '../images/html.png';
 import css from '../images/css.png';
 import js from '../images/js.png';
@@ -18,35 +17,35 @@ import ai from '../images/ai.png';
 const Tools = () => (
     <div className='toolset'>
         <div className='tool'>
-            <img src={html} />
+            <img src={html} alt='html' />
         </div>
 
         <div className='tool'>
-            <img src={css} />
+            <img src={css} alt='css' />
         </div>
 
         <div className='tool'>
-            <img src={js} />
+            <img src={js} alt='javascript' />
         </div>
 
         <div className='tool'>
-            <img src={react} />
+            <img src={react} alt='react' />
         </div>
 
         <div className='tool'>
-            <img src={jax} />
+            <img src={jax} alt='ajax' />
         </div>
 
         <div className='tool'>
-            <img src={jquery} />
+            <img src={jquery} alt='jquery' />
         </div>
 
         <div className='tool'>
-            <img src={ps} />
+            <img src={ps} alt='photoshop' />
         </div>
 
         <div className='tool'>
-            <img src={ai} />
+            <img src={ai} alt='illustrator' />
         </div>
 
     </div>

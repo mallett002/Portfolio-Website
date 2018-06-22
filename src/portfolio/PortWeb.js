@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Route, Switch, Link } from 'react-router-dom'
 import './PortWeb.css'
 import support from '../images/support.jpg'
 import stopwatch from '../images/stopwatch.jpg'
@@ -36,7 +35,7 @@ class Project extends Component {
                     <h2>{this.props.title}</h2>
                     <p>{this.props.tool}</p>
                 </div>
-                <a href={`projects/${this.props.id}`}>
+                <a href={`projects/${this.props.id}`} rel="noopener noreferrer">
                     <div 
                         className='project-background'
                         style={Object.assign({}, 

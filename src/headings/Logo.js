@@ -39,7 +39,7 @@ class Logo extends React.Component {
                     <div className='logo-container'
                         style={{...defaultStyles, ...transitionStyles[state]}}
                     >
-                        <img id='logo' src={logo} />
+                        <img id='logo' src={logo} alt='logo' />
                     </div>
                 )
             }

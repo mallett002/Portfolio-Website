@@ -41,7 +41,6 @@ const duration = 300;
 
 const defaultStyles = {
   transition: `all ${duration}ms ease-out`,
-  width: '100%',
   background: '#eaeaea',
   paddingTop: '3em',
   display: 'block',

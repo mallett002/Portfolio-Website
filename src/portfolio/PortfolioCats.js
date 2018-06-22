@@ -3,7 +3,7 @@ import Category from './Category'
 import todo from '../images/todo.jpg'
 import fair from '../images/fair.jpg'
 import buildings from '../images/buildings.jpg'
-import { Link, Route, Switch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 class PortfolioCats extends Component {

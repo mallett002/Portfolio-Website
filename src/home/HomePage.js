@@ -21,12 +21,12 @@ class HomePage extends Component {
                     <HomeMobile />
                 </div>
                 <div className='social-wrapper'>
-                    <a target="_blank" href="https://github.com/mallett002"><div className='icon-container'>
-                        <img src={git}/>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/mallett002"><div className='icon-container'>
+                        <img src={git} alt='github-link' />
                     </div></a>
 
-                    <a target="_blank" href="https://linkedin.com/in/mallettwilliam"><div className='icon-container'>
-                        <img src={link}/>
+                    <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/mallettwilliam"><div className='icon-container'>
+                        <img src={link} alt='linkedin' />
                     </div></a>
                 </div>
             </div>

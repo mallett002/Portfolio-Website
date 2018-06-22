@@ -16,17 +16,17 @@ class MobileNav extends React.Component {
                     <li><NavLink exact activeClassName='current' to='/'>Home</NavLink></li>
                     <li><NavLink activeClassName='current' to='/about/'>About Me</NavLink></li>
                     <li><NavLink activeClassName='current' to='/portfolio/'>Portfolio</NavLink></li>
-                    <li><a target="_blank" href='https://docs.google.com/document/d/1hviFC0q6DFguP8kbhlgILf8PsV7N3V_jhMUeAM67uME/edit?usp=sharing'>Resume</a></li>
+                    <li><a target="_blank" rel="noopener noreferrer" href='https://docs.google.com/document/d/1hviFC0q6DFguP8kbhlgILf8PsV7N3V_jhMUeAM67uME/edit?usp=sharing'>Resume</a></li>
                 </ul>
                 <div className='social-wrapper-mobile'>
-                    <a target="_blank" href="https://github.com/mallett002">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/mallett002">
                         <div className='icon-container-mobile'>
-                            <img src={git}/>
+                            <img src={git} alt='github' />
                     </div></a>
 
-                    <a target="_blank" href="https://linkedin.com/in/mallettwilliam">
+                    <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/mallettwilliam">
                         <div className='icon-container-mobile'>
-                            <img src={link}/>
+                            <img src={link} alt='linkedin' />
                     </div></a>
                 </div>
             </div>

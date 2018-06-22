@@ -75,7 +75,7 @@ class Project extends Component {
                     close={this.toggleModal}
                     id={this.props.id}
                 >
-                    <img id={this.props.id} src={this.props.background} />
+                    <img id={this.props.id} src={this.props.background} alt={this.props.id} />
                 </Modal>
             </div>
         )
