@@ -1,0 +1,58 @@
+.hero-div {
+    margin-left: 2em;
+    margin-top: 7em;
+}
+
+.hero-div p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+#intro {
+    font-size: 2em;
+}
+
+#developer {
+    font-size: 1em;
+}
+
+@media screen and (min-width: 700px) {
+    .hero-div {
+        margin-top: 14em;
+        margin-left: 3em;
+    }
+      
+    #developer {
+        font-size: 2em;
+    }
+
+    #intro {
+        font-size: 4em;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hero-div {
+        margin-top: 12em;
+        margin-left: 5em;
+    }
+    
+    .hero-div p {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .hero-div {
+        margin-top: 12em;
+        margin-left: 5em;
+    }
+
+    #intro {
+        font-size: 5em;
+    }
+
+    #developer {
+        font-size: 3em;
+    }
+}

@@ -1,0 +1,28 @@
+.project-wrapper {
+    cursor: pointer;
+}
+
+.project-background {
+    height: 12em;
+}
+
+@media screen and (min-width: 700px) {
+    #tractor {
+        width: 50%;
+    }
+    #pbj {
+        width: 64%;
+    }
+    #moto {
+        width: 50%;
+    }
+    #downtown {
+        width: 90%;
+    }
+    #ave {
+        width: 90%;
+    }
+    #coffee {
+        width: 90%;
+    }
+}

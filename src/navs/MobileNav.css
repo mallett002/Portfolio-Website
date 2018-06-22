@@ -1,0 +1,24 @@
+a {
+    color: rgb(35, 137, 141);
+}
+
+#mobile-ul {
+    font-size: 4em;
+    padding-left: 30px;
+    margin-bottom: 40px;
+}
+
+#mobile-ul .current {
+    color: rgb(209, 157, 89);
+}
+
+.social-wrapper-mobile {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-container-mobile {
+    width: 50px;
+    margin: 0 20px;
+}
+
