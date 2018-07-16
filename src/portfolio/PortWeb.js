@@ -68,7 +68,8 @@ class PortWeb extends Component {
                             background={support}
                             match={this.props.match}
                             id='supportclub'
-                            ext={false}
+                            ext={true}
+                            link='http://omahasupport.club/'
                         />
                         <Project 
                             title='Stopwatch' 
