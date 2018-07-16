@@ -27,7 +27,9 @@ class Portfolio extends Component {
                     <Hamburger />
 
                 </div>
+
                 <Heading title='PORTFOLIO' xSmall='185' xLarge='277' />
+
                 {this.props.match.url === '/portfolio/' && <PortIntro match={this.props.match}/>}
                 <Switch>
                     <Route path={`${this.props.match.path}/web/`} 

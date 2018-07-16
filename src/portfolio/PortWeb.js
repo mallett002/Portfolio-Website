@@ -3,6 +3,7 @@ import './PortWeb.css'
 import support from '../images/support.jpg'
 import stopwatch from '../images/stopwatch.jpg'
 import todo from '../images/todo.jpg'
+import weather from '../images/weather.jpg'
 
 const hoveredStyles = {
     heading: { opacity: '1' },
@@ -35,7 +36,7 @@ class Project extends Component {
                     <h2>{this.props.title}</h2>
                     <p>{this.props.tool}</p>
                 </div>
-                <a href={`projects/${this.props.id}`} rel="noopener noreferrer">
+                <a href={this.props.ext ? `${this.props.link}` : `/${this.props.id}/index.html`}>
                     <div 
                         className='project-background'
                         style={Object.assign({}, 
@@ -67,6 +68,7 @@ class PortWeb extends Component {
                             background={support}
                             match={this.props.match}
                             id='supportclub'
+                            ext={false}
                         />
                         <Project 
                             title='Stopwatch' 
@@ -74,6 +76,7 @@ class PortWeb extends Component {
                             background={stopwatch}
                             match={this.props.match}
                             id='stopwatch'
+                            ext={false}
                         />
                         <Project 
                             title='Todo List' 
@@ -81,6 +84,16 @@ class PortWeb extends Component {
                             background={todo}
                             match={this.props.match}
                             id='todo'
+                            ext={false}
+                        />
+                        <Project 
+                            title='Weather' 
+                            tool='React' 
+                            background={weather}
+                            match={this.props.match}
+                            id='weather'
+                            ext={true}
+                            link='https://immense-scrubland-30490.herokuapp.com/#/'
                         />
                 </div>
             </div>

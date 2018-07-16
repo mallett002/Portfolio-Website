@@ -1,21 +1,42 @@
 import React, { Component } from 'react';
 import HomeMobile from './HomeMobile';
 import './Homepage.css';
-import Nav from '../navs/Nav';
+import SlideNav from '../navs/SlideNav';
+import SlideLogo from '../headings/SlideLogo';
 import Hero from '../headings/Hero';
-import Logo from '../headings/Logo';
-import git from '../images/git-g.png'
-import link from '../images/link-g.png'
+import git from '../images/git-g.png';
+import link from '../images/link-g.png';
 
 
 class HomePage extends Component {
+    state = { 
+        showNav: false, 
+        showLogo: false
+    }
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState(({ showNav }) => ({
+                showNav: true
+            }))
+        }, 2000)
+
+        setTimeout(() => {
+            this.setState(({ showLogo }) => ({
+                showLogo: true
+            }))
+        }, 1000)
+    }
+
     render() {
+        const { showNav, showLogo } = this.state;
+
         return (
             <div className='container'>
                 <div className='home-page-wrapper'>
-                    <Nav />
-                    <Logo />
-                    <Hero />
+                        <SlideNav showNav={showNav} /> 
+                        <SlideLogo showLogo={showLogo} />
+                        <Hero />
                 </div>
                 <div className='mobile-nav'>
                     <HomeMobile />

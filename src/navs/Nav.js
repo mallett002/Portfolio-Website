@@ -1,33 +1,14 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Nav.css';
-import { Transition } from 'react-transition-group';
 import git from '../images/git-w.png'
 import link from '../images/link-w.png'
 
-const duration = 1000;
 
-const defaultStyles = {
-    transition: `all ${duration}ms ease-out`,
-    opacity: 0,
-    transform: 'translateY(-3em)',
-}
-
-const transitionStyles = {
-    entering: { opacity: .8, transform: 'translateY(0)' },
-    entered: { opacity: .8, transform: 'translateY(0)'}
-}
-
-const SlideUp = ({ in: inProp }) => (
-    <Transition
-        in={inProp}
-        timeout={duration}>
-    {
-        (state) => (
-            <nav className='nav-wide' style={{
-                ...defaultStyles,
-                ...transitionStyles[state]
-            }}>
+class Nav extends Component {
+    render() {
+        return (
+           <nav className='nav-wide'>
                 <ul>
                     <NavLink exact activeClassName='current' to='/'><li>Home</li></NavLink>
                     <NavLink activeClassName='current' to='/about/'><li>About Me</li></NavLink>
@@ -42,26 +23,7 @@ const SlideUp = ({ in: inProp }) => (
                         </a>
                     </div>
                 </ul>
-            </nav>
-        )
-    }
-    </Transition>
-);
-
-class Nav extends Component {
-    state = { on: false }
-
-    componentDidMount() {
-        setTimeout(() => {
-            this.setState(({ on }) => ({
-                on: !on
-            }))
-        }, 2000)
-    }
-
-    render() {
-        return (
-           <SlideUp in={this.state.on}/>
+           </nav>
         )
     }
 }

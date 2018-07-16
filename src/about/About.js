@@ -12,6 +12,7 @@ import jax from '../images/ajax.png';
 import jquery from '../images/jquery.png';
 import ps from '../images/ps.png';
 import ai from '../images/ai.png';
+import redux from '../images/reduxLogo.png'
 
 
 const Tools = () => (
@@ -30,6 +31,10 @@ const Tools = () => (
 
         <div className='tool'>
             <img src={react} alt='react' />
+        </div>
+
+        <div className='tool'>
+            <img src={redux} alt='redux' />
         </div>
 
         <div className='tool'>

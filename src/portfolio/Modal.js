@@ -27,14 +27,12 @@ class Modal extends Component {
         const modalStyle = {
             backgroundColor: 'white',
             borderRadius: 5,
-            maxWidth: 500,
             margin: '0 auto',
             padding: '1em',
             textAlign: 'center'
         };
 
         const modalWide = {
-            maxWidth: 800,
             minHeight: 520
         }
 

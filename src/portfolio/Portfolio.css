@@ -52,6 +52,14 @@
     color: white;
 }
 
+.heading-h1 {
+    font-size: 2em;
+}
+
+.modal {
+    max-width: 800px;
+}
+
 /*Media Queries*/
 
 
@@ -131,6 +139,10 @@
         filter: grayscale(100%) brightness(2);
 
     }
+
+    .heading-h1 {
+        font-size: 3em;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -158,14 +170,115 @@
         height: 20em;
     }
 
+    #logo {
+        margin-left: 8em;
+    }
+
     .category {
-        width: 20em;
+        width: 22em;
         height: 14em;
     }
 
     .wide-h1 {
-        width: 320px;
+        width: 352px;
         height: 144px;
         padding-top: 2.5em;
+    }
+
+    .cat-info {
+        margin-left: 8em;
+    }
+
+    .portfolio-cat {
+        margin: 0px 8em 2em 8em;
+    }
+
+    .modal {
+        max-width: 1090px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .portfolio-wrapper {
+        height: 30em;
+    }
+
+    #logo {
+        width: 220px;
+        top: 60px;
+        margin-left: 8em;
+    }
+
+    .heading-wrapper {
+        margin-left: 5em;
+    }
+
+    .cat-info {
+        margin-left: 9em;
+    }
+
+    .project-title {
+        padding-top: 2em;
+        font-size: 2em;
+    }
+
+    .cat-info-p {
+        font-size: 2em;
+    }
+
+    .portfolio-cat {
+        margin: 0 9em 2em;
+    }
+
+    .category {
+        width: 30em;
+        height: 22em;
+    }
+
+    .wide-h1 {
+        width: 480px;
+        padding-top: 4.5em;
+    }
+    
+    .port-type {
+        padding: 1em;
+        font-size: 1.5em;
+        margin-top: 2em;
+    }
+
+    .port-projects {
+        margin-top: 3em;
+    }
+
+    .project-wrapper {
+        width: 30em;
+        height: 18em;
+        margin: 1.5em;
+    }
+
+    .project-background {
+        height: 18em;
+    }
+
+    .wide-heading {
+        bottom: 12em;
+    }
+
+    .modal {
+        max-width: none;
+        width: 1280px;
+    }
+
+    .heading-h1 {
+        font-size: 4em; 
+        margin: 0 0 3px 0.2em;
+        top: 71px;
+        border-bottom: 3px solid white;
+        border-left: 3px solid white;
+        padding-left: 7px;
+    }
+
+    svg {
+        display: none;
     }
 }

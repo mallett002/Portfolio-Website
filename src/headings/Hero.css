@@ -56,3 +56,18 @@
         font-size: 3em;
     }
 }
+
+@media screen and (min-width: 2000px) {
+    .hero-div {
+        margin-top: 16em;
+        margin-left: 9em;
+    }
+
+    #intro {
+        font-size: 6em;
+    }
+
+    #developer {
+        font-size: 4em;
+    }
+}

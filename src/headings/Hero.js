@@ -11,7 +11,7 @@ class Intro extends Component {
             this.setState(({ on }) => ({
                 on: true
             }))
-        }, 2000)
+        }, 2500)
     }
 
     render() {
@@ -56,7 +56,7 @@ class Developer extends Component {
             this.setState(({on}) => ({
                 on: true
             }))
-        }, 3000)
+        }, 3500)
     }
 
     render() {

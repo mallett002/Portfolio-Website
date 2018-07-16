@@ -101,7 +101,7 @@ a {
 
 @media screen and (min-width: 1200px) {
     .home-page-wrapper { 
-        height: 55em;
+        height: 70em;
         position: fixed;
         top:0px;
         bottom:0px;
@@ -111,6 +111,19 @@ a {
 
     #logo {
         width: 170px;
+        top: 20px;
         margin-left: 5em;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .home-page-wrapper {
+        height: 85em;
+    }
+
+    #logo {
+        width: 220px;
+        top: 90px;
+        margin-left: 9em;
     }
 }
